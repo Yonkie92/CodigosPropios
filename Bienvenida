@@ -1,0 +1,17 @@
+"use strict"
+
+
+//variables para capturar datos del usuario
+var nombre = String(prompt("Ingresa tu nombre"));
+var apellido = String(prompt("Ingresa tu apellido"));
+var edad = parseInt(prompt("Ingresa tu edad"));
+
+//condicion para chequear la edad
+if (edad < 18){
+    alert("Sos menor, expulsado");
+    while(true) { //se repite el ciclo hasta que el usuario ingrese igual o + 18
+        if(prompt("Volve a introducir tu edad ")>= 18)
+        break;
+    }
+}
+        document.write("bienvenido " + nombre + " " + apellido);
